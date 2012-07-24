@@ -60,3 +60,13 @@ input.chunk_remove {
 	width: 24px;
 }
 
+#howto {
+	width: 640px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	padding-top: 10%;
+	font-family: Helvetica, Arial, sans-serif;
+
+}
+

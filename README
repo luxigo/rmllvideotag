@@ -1,0 +1,8 @@
+node modules dependencies:
+* jsdom
+* xml2js
+
+TODO:
+	database bindings
+	concurrency
+	...

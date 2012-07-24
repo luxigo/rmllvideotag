@@ -66,6 +66,7 @@ function buildHTML(options,err,stdout,stderr){
 	uni_head+='<script src="http://lp.longtailvideo.com/5/timeslidertooltipplugin/timeslidertooltipplugin.js"></script>';
 	var uni_vidzleft='';
 	var uni_vidzright='';
+	var message='';
 
 	function putItTogether() {
 		var html='<html><head>';
@@ -75,6 +76,7 @@ function buildHTML(options,err,stdout,stderr){
 		html+='</head><body><div id="_content">';
 		html+='<iframe id="vidz"></iframe>';
 		html+='<div id="vid">';
+		html+=message;
 		html+=uni_vidzleft;
 		html+=uni_vidzright;
 		html+='</div><!-- vid -->';
@@ -107,7 +109,8 @@ function buildHTML(options,err,stdout,stderr){
 			console.log(html);
 		});
 	
-	} else {
+	} else {	
+		message=fs.readFileSync('message.html');
 		putItTogether();
 	}
 }
