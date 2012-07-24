@@ -1,0 +1,22 @@
+#!/usr/local/bin/node
+function xml_read(filename, callback) {
+  var fs = require('fs'),
+  xml2js = require('xml2js');
+
+  var parser = new xml2js.Parser();
+  parser.addListener('end', callback);
+
+  fs.readFile(filename, function(err, data) {
+    if (err) {
+        throw(err);
+    } else {
+        parser.parseString(data);
+    }
+  });
+}
+
+function xml_dump(xml) {
+  console.log(JSON.stringify(xml));
+}
+
+xml_read(process.argv[2],xml_dump);
