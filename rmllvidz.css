@@ -26,7 +26,9 @@ div.ui-input-search {
 }
 ul.ui-listview {
         padding-bottom: 3em;
-	margin-top: -30px;
 }
 
+.ui-content .ui-listview {
+	margin-top: -30px;
+}
 
