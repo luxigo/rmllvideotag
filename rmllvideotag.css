@@ -62,11 +62,30 @@ input.chunk_remove {
 
 #howto {
 	width: 640px;
+	height: 480px;
+	overflow: auto;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	padding-top: 10%;
-	font-family: Helvetica, Arial, sans-serif;
+	padding-top: 32px;
+	padding-right: 328px;
+	padding-left: 32px;
+	font-family: Verdana,Tahoma,sans;
+	font-weight: normal;
+	font-size: 12px;
+	text-align: justify;
 
+}
+
+pre {
+	padding: 1em;
+	border: 1px dashed #2F6FAB;
+	color: black;
+	background-color: #F9F9F9;
+	line-height: 1.1em;
+	font-family: monospace,"Courier New";
+	white-space: pre;
+	margin: 1em 0px;
+	
 }
 
