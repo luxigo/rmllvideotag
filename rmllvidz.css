@@ -1,0 +1,31 @@
+td.eventid {
+	text-align: right;
+	width: 48px;
+	padding-right: 0.5em;
+}
+
+td.etitle {
+	font-size: smaller;
+	padding-right: 15px;
+}
+
+.ui-li .ui-btn-inner a.ui-link-inherit {
+	margin-left: -30px;
+	padding: 0 0 0 15px;
+}
+
+.ui-icon-arrow-r {
+	display: none;
+}
+
+div.ui-input-search {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-Index: 9999;
+}
+ul.ui-listview {
+        padding-bottom: 3em;
+}
+
+
