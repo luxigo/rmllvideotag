@@ -1,0 +1,62 @@
+iframe#vidz {
+	float:left;
+	width: 270px;
+	height: 514px;
+}
+
+div#vidzleft, div#vidzRight {
+	margin-left: 10px;
+}
+
+iframe#prog {
+	width: 100%;
+}
+
+div#_content { 
+	width: 1280px;
+}
+
+.conf_id {
+	width: 4em;
+}
+
+input[type="text"].conf_from, input[type="text"].conf_to {
+	width: 5.5em;
+	font-family: Arial;
+	margin: 2px 0px;
+	padding: 1px 0px;
+	border-bottom-color: #EEE;
+	border-bottom-style: inset;
+	border-bottom-width: 2px;
+	border-collapse: separate;
+	border-left-color: #EEE;
+	border-left-style: inset;
+	border-left-width: 2px;
+	border-right-color: #EEE;
+	border-right-style: inset;
+	border-right-width: 2px;
+	border-top-color: #EEE;
+	border-top-style: inset;
+	border-top-width: 2px;
+}
+
+.conf_chunk {
+	width: 3em;
+}
+
+.conf_to {
+	width: 4.5em;
+}
+#vidzRight {
+	overflow: hidden;
+}
+
+.chunks {
+	overflow-y: auto;
+	height: 112px;
+}
+
+input.chunk_remove {
+	width: 24px;
+}
+
