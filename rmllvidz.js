@@ -18,8 +18,9 @@ function main() {
 
 	html+='<ul data-role="listview" data-filter="true">';
 	allVidz.forEach(function(event,i){
-		html+='<li data-id="'+event.id+'" data-vid="'+event.url.split('/').pop()+'"><a>';
-		html+='<table><tr><td class="eventid">'+event.id+'</td><td class="etitle">'+event.title+'</td></tr></table>';
+		var vid=event.url.split('/').pop();
+		html+='<li data-id="'+event.id+'" data-vid="'+vid+'"><a>';
+		html+='<table><tr><td class="vid">'+vid+'</td><td class="eventid">'+event.id+'</td><td class="etitle">'+event.title+'</td></tr></table>';
 		html+='</a></li>';
 	});
 	html+='</ul>';
