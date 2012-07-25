@@ -35,11 +35,12 @@ $(document).ready(function(){
 		var csv=[];
 		$('.chunks tr').each(function(i,tr){
 			var chunk={};
+			chunk.vid=$('li.ui-btn-active',top.vidz.window.document).attr('data-vid');
 			chunk.conf_id=$('.conf_id',tr).val();
 			chunk.index=$('.conf_chunk',tr).val();
 			chunk.from=ffmpeg_timeformat($('.conf_from',tr).val());
 			chunk.to=ffmpeg_timeformat($('.conf_to',tr).val());
-			csv.push(chunk.conf_id+';'+chunk.index+';'+chunk.from+';'+chunk.to);
+			csv.push(chunk.vid+';'+chunk.conf_id+';'+chunk.index+';'+chunk.from+';'+chunk.to);
 		});
 		alert(csv.join("\n"));
 	});
